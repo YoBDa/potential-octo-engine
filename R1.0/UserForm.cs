@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace R1._0
 {
-    public partial class Form1 : Form
+    public partial class UserForm : Form
     {
-        public Form1()
+        public UserForm()
         {
             InitializeComponent();
+        }
+
+        private void UserForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
