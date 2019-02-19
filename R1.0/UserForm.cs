@@ -68,29 +68,77 @@ namespace R1._0
             }
 
             {
-                string sql = $"SELECT  fullname, inn, passport, password FROM users WHERE nickname='{uname}'";
+                string sql = $"SELECT id, title, category FROM sell";
                 MySqlConnection conn = DBUtils.GetDBConnection();
                 try
                 {
                     conn.Open();
                     MySqlCommand cmd = new MySqlCommand(sql, conn);
-
+                    //category имеет значение от 0 до 2: 0 - квартира, 1 - жилой дом, 2 - другое помещение
                     using (DbDataReader reader = cmd.ExecuteReader())
                     {
-                        reader.Read();
-                        full_name = reader.GetString(0);
-                        inn = reader.GetString(1);
-                        pass_series = reader.GetString(2).Substring(0, 4);
-                        pass_number = reader.GetString(2).Substring(4, 6);
-                        pwd = reader.GetString(3);
+                        while (reader.Read())
+                        {
+                            DateTime id = DateTime.Parse(reader.GetString(0));
+                            string title = reader.GetString(1);
+                            int category = reader.GetInt32(2);
+                            if (category == 0)
+                            {
+                                buyFlatList.Items.Add(id + "   " + title);
+                            }
+                            else if (category == 1)
+                            {
+                                houseBuyList.Items.Add(id + "   " + title);
+                            }
+                            else if (category == 2)
+                            {
+                                anotherBuyLIst.Items.Add(id + "   " + title);
+                            }
+                        }
                     }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                    DBConnection_stat.Text = "Disconnected";
+                }
+                finally
+                {
+                    conn.Close();
+                    conn.Dispose();
+                    conn = null;
+                }
+            }
 
-                    DBConnection_stat.Text = "Connected";
-                    uname_label.Text = "Здравствуйте, " + full_name.Split(' ')[1];
-                    FIOBox.Text = full_name;
-                    passSeriesBox.Text = pass_series;
-                    passNumberBox.Text = pass_number;
-                    innBox.Text = inn;
+            {
+                string sql = $"SELECT id, title, category FROM rent";
+                MySqlConnection conn = DBUtils.GetDBConnection();
+                try
+                {
+                    conn.Open();
+                    MySqlCommand cmd = new MySqlCommand(sql, conn);
+                    //category имеет значение от 0 до 2: 0 - квартира, 1 - жилой дом, 2 - другое помещение
+                    using (DbDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            DateTime id = DateTime.Parse(reader.GetString(0));
+                            string title = reader.GetString(1);
+                            int category = reader.GetInt32(2);
+                            if (category == 0)
+                            {
+                                rentFlatList.Items.Add(id + "   " + title);
+                            }
+                            else if (category == 1)
+                            {
+                                houseRentList.Items.Add(id + "   " + title);
+                            }
+                            else if (category == 2)
+                            {
+                                anotherRentList.Items.Add(id + "   " + title);
+                            }
+                        }
+                    }
                 }
                 catch (Exception ex)
                 {

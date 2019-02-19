@@ -182,7 +182,7 @@
             this.flatsOptions.Controls.Add(this.buyPage);
             this.flatsOptions.Controls.Add(this.rentPage);
             this.flatsOptions.Controls.Add(this.sellPage);
-            this.flatsOptions.Location = new System.Drawing.Point(7, 7);
+            this.flatsOptions.Location = new System.Drawing.Point(3, 3);
             this.flatsOptions.Name = "flatsOptions";
             this.flatsOptions.SelectedIndex = 0;
             this.flatsOptions.Size = new System.Drawing.Size(526, 384);
@@ -233,7 +233,7 @@
             this.housesOptions.Controls.Add(this.tabPage1);
             this.housesOptions.Controls.Add(this.tabPage2);
             this.housesOptions.Controls.Add(this.tabPage3);
-            this.housesOptions.Location = new System.Drawing.Point(6, 6);
+            this.housesOptions.Location = new System.Drawing.Point(3, 3);
             this.housesOptions.Name = "housesOptions";
             this.housesOptions.SelectedIndex = 0;
             this.housesOptions.Size = new System.Drawing.Size(526, 384);
@@ -282,7 +282,7 @@
             this.anotherOptions.Controls.Add(this.tabPage4);
             this.anotherOptions.Controls.Add(this.tabPage5);
             this.anotherOptions.Controls.Add(this.tabPage6);
-            this.anotherOptions.Location = new System.Drawing.Point(6, 6);
+            this.anotherOptions.Location = new System.Drawing.Point(3, 3);
             this.anotherOptions.Name = "anotherOptions";
             this.anotherOptions.SelectedIndex = 0;
             this.anotherOptions.Size = new System.Drawing.Size(526, 384);
