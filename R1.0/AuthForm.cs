@@ -29,7 +29,7 @@ namespace R1._0
 
         public int CheckUser(string login, string password)
         {
-            string sql = "SELECT nickname, inn, password, flag from users";
+            string sql = "SELECT nickname, password, flag from users";
             MySqlConnection conn = DBUtils.GetDBConnection();
             try
             {
@@ -40,12 +40,14 @@ namespace R1._0
                 {
                     while (reader.Read())
                     {
-                        if ((reader.GetValue(0).ToString() == login | reader.GetValue(1).ToString() == login) & (reader.GetValue(2).ToString() == password)){
-                            if (Convert.ToInt32(reader.GetValue(3)) == 0)
+                        //поле flag может быть от 0 до 2 включительно: 0 - простой пользователь
+                        //1 - риэлтор, 2 - админ
+                        if ((reader.GetValue(0).ToString() == login | reader.GetValue(1).ToString() == login)){
+                            if (Convert.ToInt32(reader.GetValue(2)) == 0)
                                 return 0;
-                            else if(Convert.ToInt32(reader.GetValue(3)) == 1)
+                            else if(Convert.ToInt32(reader.GetValue(2)) == 1)
                                 return 1;
-                            else if (Convert.ToInt32(reader.GetValue(3)) == 2)
+                            else if (Convert.ToInt32(reader.GetValue(2)) == 2)
                                 return 2;
                         } else
                         {
@@ -71,13 +73,13 @@ namespace R1._0
                 {
                     if (getUserFlag == 0)
                     {
-                        UserForm uf = new UserForm();
+                        UserForm uf = new UserForm(usernameBox.Text);
                         uf.Show();
                         this.Visible = false;
                     }
                     else if (getUserFlag == 1)
                     {
-                        RieltorForm rf = new RieltorForm();
+                        AdmForm rf = new AdmForm();
                         rf.Show();
                         this.Visible = false;
                     }

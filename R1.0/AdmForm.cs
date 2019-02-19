@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace R1._0
 {
-    public partial class RieltorForm : Form
+    public partial class AdmForm : Form
     {
-        public RieltorForm()
+        public AdmForm()
         {
             InitializeComponent();
         }

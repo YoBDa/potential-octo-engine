@@ -1,6 +1,6 @@
 ﻿namespace R1._0
 {
-    partial class RieltorForm
+    partial class AdmForm
     {
         /// <summary>
         /// Required designer variable.
@@ -33,10 +33,13 @@
             this.flatsOptions = new System.Windows.Forms.TabControl();
             this.buyPage = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.sellFlatEditButton = new System.Windows.Forms.Button();
+            this.sellFlatDeleteButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.buyFlatList = new System.Windows.Forms.ListBox();
             this.rentPage = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.flatRentEditButton = new System.Windows.Forms.Button();
             this.flatRentDeleteButton = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.rentFlatList = new System.Windows.Forms.ListBox();
@@ -44,16 +47,22 @@
             this.housesOptions = new System.Windows.Forms.TabControl();
             this.houseBuyPage = new System.Windows.Forms.TabPage();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.sellHouseEditButton = new System.Windows.Forms.Button();
+            this.sellHouseDeleteButton = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.houseBuyList = new System.Windows.Forms.ListBox();
             this.houseRentPage = new System.Windows.Forms.TabPage();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.rentHouseEditButton = new System.Windows.Forms.Button();
+            this.rentHouseDeleteButton = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.houseRentList = new System.Windows.Forms.ListBox();
             this.anotherPage = new System.Windows.Forms.TabPage();
             this.anotherOptions = new System.Windows.Forms.TabControl();
             this.anotherBuyPage = new System.Windows.Forms.TabPage();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.anotherSellEditButton = new System.Windows.Forms.Button();
+            this.anotherSellDeleteButton = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.anotherBuyLIst = new System.Windows.Forms.ListBox();
             this.anotherRentPage = new System.Windows.Forms.TabPage();
@@ -71,15 +80,6 @@
             this.FIOBox = new System.Windows.Forms.TextBox();
             this.DBConnection_stat = new System.Windows.Forms.Label();
             this.uname_label = new System.Windows.Forms.Label();
-            this.flatRentEditButton = new System.Windows.Forms.Button();
-            this.sellFlatEditButton = new System.Windows.Forms.Button();
-            this.sellFlatDeleteButton = new System.Windows.Forms.Button();
-            this.sellHouseEditButton = new System.Windows.Forms.Button();
-            this.sellHouseDeleteButton = new System.Windows.Forms.Button();
-            this.rentHouseEditButton = new System.Windows.Forms.Button();
-            this.rentHouseDeleteButton = new System.Windows.Forms.Button();
-            this.anotherSellEditButton = new System.Windows.Forms.Button();
-            this.anotherSellDeleteButton = new System.Windows.Forms.Button();
             this.NDPages.SuspendLayout();
             this.flatsPage.SuspendLayout();
             this.flatsOptions.SuspendLayout();
@@ -155,6 +155,24 @@
             this.panel1.Size = new System.Drawing.Size(505, 342);
             this.panel1.TabIndex = 0;
             // 
+            // sellFlatEditButton
+            // 
+            this.sellFlatEditButton.Location = new System.Drawing.Point(6, 312);
+            this.sellFlatEditButton.Name = "sellFlatEditButton";
+            this.sellFlatEditButton.Size = new System.Drawing.Size(125, 27);
+            this.sellFlatEditButton.TabIndex = 5;
+            this.sellFlatEditButton.Text = "Изменить";
+            this.sellFlatEditButton.UseVisualStyleBackColor = true;
+            // 
+            // sellFlatDeleteButton
+            // 
+            this.sellFlatDeleteButton.Location = new System.Drawing.Point(377, 312);
+            this.sellFlatDeleteButton.Name = "sellFlatDeleteButton";
+            this.sellFlatDeleteButton.Size = new System.Drawing.Size(125, 27);
+            this.sellFlatDeleteButton.TabIndex = 4;
+            this.sellFlatDeleteButton.Text = "Удалить";
+            this.sellFlatDeleteButton.UseVisualStyleBackColor = true;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -194,6 +212,15 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(505, 342);
             this.panel2.TabIndex = 1;
+            // 
+            // flatRentEditButton
+            // 
+            this.flatRentEditButton.Location = new System.Drawing.Point(6, 312);
+            this.flatRentEditButton.Name = "flatRentEditButton";
+            this.flatRentEditButton.Size = new System.Drawing.Size(125, 27);
+            this.flatRentEditButton.TabIndex = 3;
+            this.flatRentEditButton.Text = "Изменить";
+            this.flatRentEditButton.UseVisualStyleBackColor = true;
             // 
             // flatRentDeleteButton
             // 
@@ -265,6 +292,24 @@
             this.panel3.Size = new System.Drawing.Size(505, 342);
             this.panel3.TabIndex = 1;
             // 
+            // sellHouseEditButton
+            // 
+            this.sellHouseEditButton.Location = new System.Drawing.Point(6, 312);
+            this.sellHouseEditButton.Name = "sellHouseEditButton";
+            this.sellHouseEditButton.Size = new System.Drawing.Size(125, 27);
+            this.sellHouseEditButton.TabIndex = 7;
+            this.sellHouseEditButton.Text = "Изменить";
+            this.sellHouseEditButton.UseVisualStyleBackColor = true;
+            // 
+            // sellHouseDeleteButton
+            // 
+            this.sellHouseDeleteButton.Location = new System.Drawing.Point(377, 312);
+            this.sellHouseDeleteButton.Name = "sellHouseDeleteButton";
+            this.sellHouseDeleteButton.Size = new System.Drawing.Size(125, 27);
+            this.sellHouseDeleteButton.TabIndex = 6;
+            this.sellHouseDeleteButton.Text = "Удалить";
+            this.sellHouseDeleteButton.UseVisualStyleBackColor = true;
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -304,6 +349,24 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(505, 342);
             this.panel4.TabIndex = 1;
+            // 
+            // rentHouseEditButton
+            // 
+            this.rentHouseEditButton.Location = new System.Drawing.Point(6, 312);
+            this.rentHouseEditButton.Name = "rentHouseEditButton";
+            this.rentHouseEditButton.Size = new System.Drawing.Size(125, 27);
+            this.rentHouseEditButton.TabIndex = 9;
+            this.rentHouseEditButton.Text = "Изменить";
+            this.rentHouseEditButton.UseVisualStyleBackColor = true;
+            // 
+            // rentHouseDeleteButton
+            // 
+            this.rentHouseDeleteButton.Location = new System.Drawing.Point(377, 312);
+            this.rentHouseDeleteButton.Name = "rentHouseDeleteButton";
+            this.rentHouseDeleteButton.Size = new System.Drawing.Size(125, 27);
+            this.rentHouseDeleteButton.TabIndex = 8;
+            this.rentHouseDeleteButton.Text = "Удалить";
+            this.rentHouseDeleteButton.UseVisualStyleBackColor = true;
             // 
             // label7
             // 
@@ -364,6 +427,24 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(505, 342);
             this.panel5.TabIndex = 1;
+            // 
+            // anotherSellEditButton
+            // 
+            this.anotherSellEditButton.Location = new System.Drawing.Point(6, 312);
+            this.anotherSellEditButton.Name = "anotherSellEditButton";
+            this.anotherSellEditButton.Size = new System.Drawing.Size(125, 27);
+            this.anotherSellEditButton.TabIndex = 11;
+            this.anotherSellEditButton.Text = "Изменить";
+            this.anotherSellEditButton.UseVisualStyleBackColor = true;
+            // 
+            // anotherSellDeleteButton
+            // 
+            this.anotherSellDeleteButton.Location = new System.Drawing.Point(377, 312);
+            this.anotherSellDeleteButton.Name = "anotherSellDeleteButton";
+            this.anotherSellDeleteButton.Size = new System.Drawing.Size(125, 27);
+            this.anotherSellDeleteButton.TabIndex = 10;
+            this.anotherSellDeleteButton.Text = "Удалить";
+            this.anotherSellDeleteButton.UseVisualStyleBackColor = true;
             // 
             // label8
             // 
@@ -513,88 +594,7 @@
             this.uname_label.TabIndex = 11;
             this.uname_label.Text = "Здравствуйте, Name!";
             // 
-            // flatRentEditButton
-            // 
-            this.flatRentEditButton.Location = new System.Drawing.Point(6, 312);
-            this.flatRentEditButton.Name = "flatRentEditButton";
-            this.flatRentEditButton.Size = new System.Drawing.Size(125, 27);
-            this.flatRentEditButton.TabIndex = 3;
-            this.flatRentEditButton.Text = "Изменить";
-            this.flatRentEditButton.UseVisualStyleBackColor = true;
-            // 
-            // sellFlatEditButton
-            // 
-            this.sellFlatEditButton.Location = new System.Drawing.Point(6, 312);
-            this.sellFlatEditButton.Name = "sellFlatEditButton";
-            this.sellFlatEditButton.Size = new System.Drawing.Size(125, 27);
-            this.sellFlatEditButton.TabIndex = 5;
-            this.sellFlatEditButton.Text = "Изменить";
-            this.sellFlatEditButton.UseVisualStyleBackColor = true;
-            // 
-            // sellFlatDeleteButton
-            // 
-            this.sellFlatDeleteButton.Location = new System.Drawing.Point(377, 312);
-            this.sellFlatDeleteButton.Name = "sellFlatDeleteButton";
-            this.sellFlatDeleteButton.Size = new System.Drawing.Size(125, 27);
-            this.sellFlatDeleteButton.TabIndex = 4;
-            this.sellFlatDeleteButton.Text = "Удалить";
-            this.sellFlatDeleteButton.UseVisualStyleBackColor = true;
-            // 
-            // sellHouseEditButton
-            // 
-            this.sellHouseEditButton.Location = new System.Drawing.Point(6, 312);
-            this.sellHouseEditButton.Name = "sellHouseEditButton";
-            this.sellHouseEditButton.Size = new System.Drawing.Size(125, 27);
-            this.sellHouseEditButton.TabIndex = 7;
-            this.sellHouseEditButton.Text = "Изменить";
-            this.sellHouseEditButton.UseVisualStyleBackColor = true;
-            // 
-            // sellHouseDeleteButton
-            // 
-            this.sellHouseDeleteButton.Location = new System.Drawing.Point(377, 312);
-            this.sellHouseDeleteButton.Name = "sellHouseDeleteButton";
-            this.sellHouseDeleteButton.Size = new System.Drawing.Size(125, 27);
-            this.sellHouseDeleteButton.TabIndex = 6;
-            this.sellHouseDeleteButton.Text = "Удалить";
-            this.sellHouseDeleteButton.UseVisualStyleBackColor = true;
-            // 
-            // rentHouseEditButton
-            // 
-            this.rentHouseEditButton.Location = new System.Drawing.Point(6, 312);
-            this.rentHouseEditButton.Name = "rentHouseEditButton";
-            this.rentHouseEditButton.Size = new System.Drawing.Size(125, 27);
-            this.rentHouseEditButton.TabIndex = 9;
-            this.rentHouseEditButton.Text = "Изменить";
-            this.rentHouseEditButton.UseVisualStyleBackColor = true;
-            // 
-            // rentHouseDeleteButton
-            // 
-            this.rentHouseDeleteButton.Location = new System.Drawing.Point(377, 312);
-            this.rentHouseDeleteButton.Name = "rentHouseDeleteButton";
-            this.rentHouseDeleteButton.Size = new System.Drawing.Size(125, 27);
-            this.rentHouseDeleteButton.TabIndex = 8;
-            this.rentHouseDeleteButton.Text = "Удалить";
-            this.rentHouseDeleteButton.UseVisualStyleBackColor = true;
-            // 
-            // anotherSellEditButton
-            // 
-            this.anotherSellEditButton.Location = new System.Drawing.Point(6, 312);
-            this.anotherSellEditButton.Name = "anotherSellEditButton";
-            this.anotherSellEditButton.Size = new System.Drawing.Size(125, 27);
-            this.anotherSellEditButton.TabIndex = 11;
-            this.anotherSellEditButton.Text = "Изменить";
-            this.anotherSellEditButton.UseVisualStyleBackColor = true;
-            // 
-            // anotherSellDeleteButton
-            // 
-            this.anotherSellDeleteButton.Location = new System.Drawing.Point(377, 312);
-            this.anotherSellDeleteButton.Name = "anotherSellDeleteButton";
-            this.anotherSellDeleteButton.Size = new System.Drawing.Size(125, 27);
-            this.anotherSellDeleteButton.TabIndex = 10;
-            this.anotherSellDeleteButton.Text = "Удалить";
-            this.anotherSellDeleteButton.UseVisualStyleBackColor = true;
-            // 
-            // RieltorForm
+            // AdmForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -610,8 +610,8 @@
             this.Controls.Add(this.DBConnection_stat);
             this.Controls.Add(this.uname_label);
             this.Controls.Add(this.NDPages);
-            this.Name = "RieltorForm";
-            this.Text = "Риэлтор";
+            this.Name = "AdmForm";
+            this.Text = "Администратор";
             this.NDPages.ResumeLayout(false);
             this.flatsPage.ResumeLayout(false);
             this.flatsOptions.ResumeLayout(false);

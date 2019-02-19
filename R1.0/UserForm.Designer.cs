@@ -54,9 +54,9 @@
             this.passSeriesBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.passNumberBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.innBox = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.rentFlatButton = new System.Windows.Forms.Button();
@@ -404,12 +404,12 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Серия и Номер пасспорта";
             // 
-            // textBox1
+            // passNumberBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(77, 166);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(158, 22);
-            this.textBox1.TabIndex = 7;
+            this.passNumberBox.Location = new System.Drawing.Point(77, 166);
+            this.passNumberBox.Name = "passNumberBox";
+            this.passNumberBox.Size = new System.Drawing.Size(158, 22);
+            this.passNumberBox.TabIndex = 7;
             // 
             // label4
             // 
@@ -420,12 +420,12 @@
             this.label4.TabIndex = 9;
             this.label4.Text = "ИНН";
             // 
-            // textBox2
+            // innBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(12, 227);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(223, 22);
-            this.textBox2.TabIndex = 8;
+            this.innBox.Location = new System.Drawing.Point(12, 227);
+            this.innBox.Name = "innBox";
+            this.innBox.Size = new System.Drawing.Size(223, 22);
+            this.innBox.TabIndex = 8;
             // 
             // button1
             // 
@@ -435,6 +435,7 @@
             this.button1.TabIndex = 10;
             this.button1.Text = "Изменить";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel2
             // 
@@ -818,8 +819,8 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.innBox);
+            this.Controls.Add(this.passNumberBox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.passSeriesBox);
@@ -830,6 +831,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "UserForm";
             this.Text = "Клиент";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.UserForm_FormClosed);
             this.Load += new System.EventHandler(this.UserForm_Load);
             this.NDPages.ResumeLayout(false);
             this.flatsPage.ResumeLayout(false);
@@ -895,9 +897,9 @@
         private System.Windows.Forms.TextBox passSeriesBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox passNumberBox;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox innBox;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button rentFlatButton;
