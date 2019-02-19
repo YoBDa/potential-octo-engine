@@ -54,7 +54,6 @@
             this.anotherOptions = new System.Windows.Forms.TabControl();
             this.anotherBuyPage = new System.Windows.Forms.TabPage();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.anotherBuyButton = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.anotherBuyLIst = new System.Windows.Forms.ListBox();
             this.anotherRentPage = new System.Windows.Forms.TabPage();
@@ -79,6 +78,8 @@
             this.sellHouseDeleteButton = new System.Windows.Forms.Button();
             this.rentHouseEditButton = new System.Windows.Forms.Button();
             this.rentHouseDeleteButton = new System.Windows.Forms.Button();
+            this.anotherSellEditButton = new System.Windows.Forms.Button();
+            this.anotherSellDeleteButton = new System.Windows.Forms.Button();
             this.NDPages.SuspendLayout();
             this.flatsPage.SuspendLayout();
             this.flatsOptions.SuspendLayout();
@@ -327,7 +328,7 @@
             this.anotherPage.Controls.Add(this.anotherOptions);
             this.anotherPage.Location = new System.Drawing.Point(4, 25);
             this.anotherPage.Name = "anotherPage";
-            this.anotherPage.Size = new System.Drawing.Size(542, 397);
+            this.anotherPage.Size = new System.Drawing.Size(539, 397);
             this.anotherPage.TabIndex = 2;
             this.anotherPage.Text = "Прочая недвижимость";
             this.anotherPage.UseVisualStyleBackColor = true;
@@ -355,22 +356,14 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.anotherBuyButton);
+            this.panel5.Controls.Add(this.anotherSellEditButton);
+            this.panel5.Controls.Add(this.anotherSellDeleteButton);
             this.panel5.Controls.Add(this.label8);
             this.panel5.Controls.Add(this.anotherBuyLIst);
             this.panel5.Location = new System.Drawing.Point(7, 6);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(505, 342);
             this.panel5.TabIndex = 1;
-            // 
-            // anotherBuyButton
-            // 
-            this.anotherBuyButton.Location = new System.Drawing.Point(377, 312);
-            this.anotherBuyButton.Name = "anotherBuyButton";
-            this.anotherBuyButton.Size = new System.Drawing.Size(125, 27);
-            this.anotherBuyButton.TabIndex = 2;
-            this.anotherBuyButton.Text = "Купить";
-            this.anotherBuyButton.UseVisualStyleBackColor = true;
             // 
             // label8
             // 
@@ -583,6 +576,24 @@
             this.rentHouseDeleteButton.Text = "Удалить";
             this.rentHouseDeleteButton.UseVisualStyleBackColor = true;
             // 
+            // anotherSellEditButton
+            // 
+            this.anotherSellEditButton.Location = new System.Drawing.Point(6, 312);
+            this.anotherSellEditButton.Name = "anotherSellEditButton";
+            this.anotherSellEditButton.Size = new System.Drawing.Size(125, 27);
+            this.anotherSellEditButton.TabIndex = 11;
+            this.anotherSellEditButton.Text = "Изменить";
+            this.anotherSellEditButton.UseVisualStyleBackColor = true;
+            // 
+            // anotherSellDeleteButton
+            // 
+            this.anotherSellDeleteButton.Location = new System.Drawing.Point(377, 312);
+            this.anotherSellDeleteButton.Name = "anotherSellDeleteButton";
+            this.anotherSellDeleteButton.Size = new System.Drawing.Size(125, 27);
+            this.anotherSellDeleteButton.TabIndex = 10;
+            this.anotherSellDeleteButton.Text = "Удалить";
+            this.anotherSellDeleteButton.UseVisualStyleBackColor = true;
+            // 
             // RieltorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -600,7 +611,7 @@
             this.Controls.Add(this.uname_label);
             this.Controls.Add(this.NDPages);
             this.Name = "RieltorForm";
-            this.Text = "RieltorForm";
+            this.Text = "Риэлтор";
             this.NDPages.ResumeLayout(false);
             this.flatsPage.ResumeLayout(false);
             this.flatsOptions.ResumeLayout(false);
@@ -659,7 +670,6 @@
         private System.Windows.Forms.TabControl anotherOptions;
         private System.Windows.Forms.TabPage anotherBuyPage;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button anotherBuyButton;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ListBox anotherBuyLIst;
         private System.Windows.Forms.TabPage anotherRentPage;
@@ -684,5 +694,7 @@
         private System.Windows.Forms.Button sellHouseDeleteButton;
         private System.Windows.Forms.Button rentHouseEditButton;
         private System.Windows.Forms.Button rentHouseDeleteButton;
+        private System.Windows.Forms.Button anotherSellEditButton;
+        private System.Windows.Forms.Button anotherSellDeleteButton;
     }
 }
